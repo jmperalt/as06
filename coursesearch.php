@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
 <?php
 
 printForm(); 
@@ -6,10 +19,10 @@ printForm();
 // display the entry form for course search
 function printForm(){
 	
-	echo '<h2>Course Lookup</h2>';
+	echo '<h2 class="text-center">Course Lookup</h2>';
 	
 	// print user entry form
-	echo "<form action='courses.php'>";
+	echo "<form action='courses.php' class='text-center'>";
 	echo "Course Prefix (Department)<br/>";
 	echo "<input type='text' placeholder='CS' name='prefix'><br/>";
 	echo "Course Number<br/>";
@@ -28,11 +41,17 @@ function printForm(){
 	//echo "Building/Room<br/>";
 	//echo "<input type='text' name='building'>";
 	//echo "<input type='text' name='room'><br/>";
-	echo "<input type='submit' value='Submit'>";
+	echo "<br>";
+	echo "<input type='submit' value='Submit' class='btn btn-primary'> <br/>";
+	echo "<br>";
+	echo "<a class='btn btn-primary' href='https://github.com/jmperalt/as06'>Github Source Code</a>";
 	echo "</form>";
+	
 }
 ?>
-
+</body>
 <script>
 	document.getElementById("dropdown").selectedIndex = -1;
 </script>
+</html>
+
